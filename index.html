@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>黄元劲 · 个人介绍魔方</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23060606'/%3E%3Crect x='6' y='6' width='8' height='8' rx='1.5' fill='%23d3202c'/%3E%3Crect x='17' y='6' width='8' height='8' rx='1.5' fill='%23f2efe8'/%3E%3Crect x='6' y='17' width='8' height='8' rx='1.5' fill='%230b5fb4'/%3E%3Crect x='17' y='17' width='8' height='8' rx='1.5' fill='%23ffc61a'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="./index--KfZXnqo.js"></script>
+  <link rel="stylesheet" crossorigin href="./index-41YmrR6x.css">
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div id="noise" aria-hidden="true"></div>
+
+  <header class="chrome top-bar">
+    <div class="brand">YJ·CUBE<span class="brand-sub">个人介绍</span></div>
+    <div class="top-mid">中北大学&nbsp;·&nbsp;新能源科学与工程</div>
+    <nav class="top-right">
+      <button id="btn-scramble" type="button">打乱</button>
+      <button id="btn-reset" type="button">复原</button>
+    </nav>
+  </header>
+
+  <div class="readout" aria-live="polite">
+    <div class="readout-row">MOVES&nbsp;&nbsp;<b id="hud-moves">000</b></div>
+    <div class="readout-row">READ&nbsp;&nbsp;&nbsp;<b id="hud-read">00/26</b></div>
+    <div class="readout-hint">悬停小块 · 魔方定格放大<br />点击小块 · 拆散并运镜阅读<br />长按魔方 · 蓄力爆开星图</div>
+  </div>
+
+  <div id="wordmark" aria-hidden="true">黄元劲</div>
+
+  <div id="hint">
+    <span><i class="k">悬停小块</i>定格放大</span>
+    <span><i class="k">点击小块</i>拆散阅读</span>
+    <span><i class="k">拖动小块</i>拧动单层</span>
+    <span><i class="k">拖动空白</i>旋转视角</span>
+    <span><i class="k">长按魔方</i>蓄力爆开</span>
+  </div>
+
+  <div id="focus-dim" aria-hidden="true"></div>
+  <button id="focus-close" type="button" aria-label="返回">×</button>
+
+  <div id="cursor" aria-hidden="true"><i></i><span id="cursor-label"></span></div>
+
+</body>
+</html>
